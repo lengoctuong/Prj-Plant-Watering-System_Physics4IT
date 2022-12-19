@@ -1,0 +1,204 @@
+[
+    {
+        "id": "5896ce12732ee4d0",
+        "type": "tab",
+        "label": "Flow 4",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "35efad788cf42ee0",
+        "type": "ui_text_input",
+        "z": "5896ce12732ee4d0",
+        "name": "",
+        "label": "Input Student Code",
+        "tooltip": "",
+        "group": "f577b012344a4e15",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 170,
+        "y": 260,
+        "wires": [
+            [
+                "c633852d38030fd3"
+            ]
+        ]
+    },
+    {
+        "id": "0bd500c72e339a4f",
+        "type": "mqtt out",
+        "z": "5896ce12732ee4d0",
+        "name": "",
+        "topic": "20127383/quiz06_receive",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f9048c2143cc39c4",
+        "x": 490,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "3e636cad50bf72d9",
+        "type": "mqtt in",
+        "z": "5896ce12732ee4d0",
+        "name": "",
+        "topic": "20127383/quiz06_send",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f9048c2143cc39c4",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 360,
+        "wires": [
+            [
+                "13824a8091485269"
+            ]
+        ]
+    },
+    {
+        "id": "13824a8091485269",
+        "type": "ui_text",
+        "z": "5896ce12732ee4d0",
+        "group": "f577b012344a4e15",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Name",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 430,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "bf819a1ad28635a3",
+        "type": "ui_button",
+        "z": "5896ce12732ee4d0",
+        "name": "",
+        "group": "f577b012344a4e15",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Submit",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "send",
+        "payload": "dashboardLog",
+        "payloadType": "flow",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 360,
+        "y": 120,
+        "wires": [
+            [
+                "1ab221d6203ca058"
+            ]
+        ]
+    },
+    {
+        "id": "c633852d38030fd3",
+        "type": "function",
+        "z": "5896ce12732ee4d0",
+        "name": "msg to flow{dashboardLog}",
+        "func": "var dashboardLog = flow.get('dashboardLog') || [];\n\ndashboardLog.push(msg);\nif (dashboardLog.length > 20) {\n    dashboardLog.shift();\n    dashboardLog.length = 20;\n}\n\nflow.set('dashboardLog', dashboardLog);\n\nmsg = {};\nmsg.payload = dashboardLog;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 180,
+        "wires": [
+            [
+                "bf819a1ad28635a3"
+            ]
+        ]
+    },
+    {
+        "id": "1ab221d6203ca058",
+        "type": "function",
+        "z": "5896ce12732ee4d0",
+        "name": "flow{dashboardLog} to msg",
+        "func": "var dashboardLog = flow.get('dashboardLog') || [];\n\nmsg = {};\nmsg.payload = dashboardLog[dashboardLog.length - 1].payload;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 60,
+        "wires": [
+            [
+                "0bd500c72e339a4f"
+            ]
+        ]
+    },
+    {
+        "id": "f577b012344a4e15",
+        "type": "ui_group",
+        "name": "Student Code",
+        "tab": "38baf1f675d5a399",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f9048c2143cc39c4",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.mqtt-dashboard.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "38baf1f675d5a399",
+        "type": "ui_tab",
+        "name": "Quiz06",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
