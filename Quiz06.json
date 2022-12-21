@@ -1,8 +1,481 @@
 [
     {
-        "id": "c05177f83bba8e2e",
+        "id": "5896ce12732ee4d0",
+        "type": "tab",
+        "label": "Nhom10",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d3e26c01e391d8cd",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "35fcb186dc742b5c",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5a9e17edfc27d234",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "684613be8ea8e62d",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "1dfbccf2bd793f24",
+        "type": "ui_group",
+        "name": "Lab04",
+        "tab": "5a9e17edfc27d234",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "604982341d9ae9d6",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "f577b012344a4e15",
+        "type": "ui_group",
+        "name": "Unit",
+        "tab": "38baf1f675d5a399",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f9048c2143cc39c4",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "38baf1f675d5a399",
+        "type": "ui_tab",
+        "name": "Quiz06",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d92daab8c2cd67f2",
+        "type": "ui_group",
+        "name": "UI Elements",
+        "tab": "7dd7db7523cceb26",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ce9a86dab97c4d56",
+        "type": "ui_group",
+        "name": "Logs",
+        "tab": "7dd7db7523cceb26",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7dd7db7523cceb26",
+        "type": "ui_tab",
+        "name": "Event Logs",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "60138149ce256d0a",
+        "type": "ui_group",
+        "name": "Logs",
+        "tab": "5a9e17edfc27d234",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "557c4c5f8ee852ba",
+        "type": "deepstack-server",
+        "proto": "http",
+        "host": "localhost",
+        "port": "8080",
+        "version": "v1",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "1fc637d0f8700f22",
+        "type": "deepstack-server",
+        "proto": "http",
+        "host": "localhost",
+        "port": "1880",
+        "version": "v1",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "a4bd941042b14835",
+        "type": "deepstack-server",
+        "proto": "https",
+        "host": "localhost",
+        "port": "80",
+        "version": "v1",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "675036dd.603328",
+        "type": "ui_group",
+        "name": "Frame Grab",
+        "tab": "7af2d9c8.0a9148",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "e16e06ca.f38438",
+        "type": "ui_group",
+        "name": "Frame Statistics",
+        "tab": "7af2d9c8.0a9148",
+        "order": 2,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "cb67921.cf4df7",
+        "type": "ui_group",
+        "name": "Video Capture",
+        "tab": "7af2d9c8.0a9148",
+        "order": 3,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "984422e9.d6d96",
+        "type": "ui_group",
+        "name": "Video Statistics",
+        "tab": "7af2d9c8.0a9148",
+        "order": 4,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "a06d1d6b.bdef2",
+        "type": "ui_group",
+        "name": "Report",
+        "tab": "7af2d9c8.0a9148",
+        "order": 5,
+        "disp": true,
+        "width": "12"
+    },
+    {
+        "id": "7af2d9c8.0a9148",
+        "type": "ui_tab",
+        "name": "NVR",
+        "icon": "dashboard",
+        "order": 13
+    },
+    {
+        "id": "6e51d21289b83bf7",
+        "type": "ui_group",
+        "name": "Student Code",
+        "tab": "e5fe359e2cc08375",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "81cf018b5ce1c76e",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.mqtt-dashboard.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "e5fe359e2cc08375",
+        "type": "ui_tab",
+        "name": "Quiz06",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "35efad788cf42ee0",
+        "type": "ui_text_input",
+        "z": "5896ce12732ee4d0",
+        "name": "",
+        "label": "Input Student Code",
+        "tooltip": "",
+        "group": "6e51d21289b83bf7",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 170,
+        "y": 260,
+        "wires": [
+            [
+                "c633852d38030fd3"
+            ]
+        ]
+    },
+    {
+        "id": "0bd500c72e339a4f",
+        "type": "mqtt out",
+        "z": "5896ce12732ee4d0",
+        "name": "",
+        "topic": "20127383/quiz06_receive",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "81cf018b5ce1c76e",
+        "x": 490,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "3e636cad50bf72d9",
+        "type": "mqtt in",
+        "z": "5896ce12732ee4d0",
+        "name": "",
+        "topic": "20127383/quiz06_send",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "81cf018b5ce1c76e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 360,
+        "wires": [
+            [
+                "07fe59ba8ed07a7c",
+                "84590678c754c179"
+            ]
+        ]
+    },
+    {
+        "id": "bf819a1ad28635a3",
+        "type": "ui_button",
+        "z": "5896ce12732ee4d0",
+        "name": "",
+        "group": "6e51d21289b83bf7",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Submit",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "send",
+        "payload": "dashboardLog",
+        "payloadType": "flow",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 360,
+        "y": 120,
+        "wires": [
+            [
+                "1ab221d6203ca058"
+            ]
+        ]
+    },
+    {
+        "id": "c633852d38030fd3",
         "type": "function",
-        "z": "d3e26c01e391d8cd",
+        "z": "5896ce12732ee4d0",
         "name": "msg to flow{dashboardLog}",
         "func": "var dashboardLog = flow.get('dashboardLog') || [];\n\ndashboardLog.push(msg);\nif (dashboardLog.length > 20) {\n    dashboardLog.shift();\n    dashboardLog.length = 20;\n}\n\nflow.set('dashboardLog', dashboardLog);\n\nmsg = {};\nmsg.payload = dashboardLog;\n\nreturn msg;",
         "outputs": 1,
@@ -10,12 +483,665 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 400,
+        "x": 260,
+        "y": 180,
+        "wires": [
+            [
+                "bf819a1ad28635a3"
+            ]
+        ]
+    },
+    {
+        "id": "1ab221d6203ca058",
+        "type": "function",
+        "z": "5896ce12732ee4d0",
+        "name": "flow{dashboardLog} to msg",
+        "func": "var dashboardLog = flow.get('dashboardLog') || [];\n\nmsg = {};\nmsg.payload = dashboardLog[dashboardLog.length - 1].payload;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 60,
+        "wires": [
+            [
+                "0bd500c72e339a4f"
+            ]
+        ]
+    },
+    {
+        "id": "582907a94a68c63c",
+        "type": "ui_text",
+        "z": "5896ce12732ee4d0",
+        "group": "6e51d21289b83bf7",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Name2",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 440,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "2a6d61d4ee09f852",
+        "type": "mqtt in",
+        "z": "5896ce12732ee4d0",
+        "name": "",
+        "topic": "20127383/quiz06_123",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "81cf018b5ce1c76e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
         "y": 440,
         "wires": [
             [
-                "0ab393599a448dbb"
+                "582907a94a68c63c"
             ]
+        ]
+    },
+    {
+        "id": "07fe59ba8ed07a7c",
+        "type": "ui_gauge",
+        "z": "5896ce12732ee4d0",
+        "name": "temp",
+        "group": "6e51d21289b83bf7",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "temp",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 450,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "84590678c754c179",
+        "type": "ui_chart",
+        "z": "5896ce12732ee4d0",
+        "name": "",
+        "group": "6e51d21289b83bf7",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 430,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "913962bd34a617bb",
+        "type": "ui_dropdown",
+        "z": "d3e26c01e391d8cd",
+        "name": "Type",
+        "label": "Type",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "1dfbccf2bd793f24",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Nhỏ giọt",
+                "value": "Nho giot",
+                "type": "str"
+            },
+            {
+                "label": "Phun Sương",
+                "value": "Phun suong",
+                "type": "str"
+            },
+            {
+                "label": "Xịt nước",
+                "value": "Xit",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "dropdown",
+        "topicType": "msg",
+        "className": "",
+        "x": 70,
+        "y": 220,
+        "wires": [
+            [
+                "69c84bc955fec5af",
+                "c05177f83bba8e2e"
+            ]
+        ]
+    },
+    {
+        "id": "0580bd69d3d05159",
+        "type": "ui_slider",
+        "z": "d3e26c01e391d8cd",
+        "name": "Water",
+        "label": "Water",
+        "tooltip": "",
+        "group": "1dfbccf2bd793f24",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "slider",
+        "topicType": "str",
+        "min": "0.5",
+        "max": "5",
+        "step": "0.5",
+        "className": "",
+        "x": 70,
+        "y": 280,
+        "wires": [
+            [
+                "69c84bc955fec5af",
+                "daa2355c7e0fc210"
+            ]
+        ]
+    },
+    {
+        "id": "69c84bc955fec5af",
+        "type": "function",
+        "z": "d3e26c01e391d8cd",
+        "name": "Push event log to array",
+        "func": "var dashboardLog = flow.get('dashboardLog') || [];\n\nif (dashboardLog.length == 0)\n    dashboardLog = [\n    { \"payload\": \"Non-Clicked\", \"topic\": \"button\" },\n    { \"payload\": \"\", \"topic\": \"dropdown\" },\n    { \"payload\": \"\", \"topic\": \"switch\" },\n    { \"payload\": \"\", \"topic\": \"slider\" },\n    { \"payload\": \"\", \"topic\": \"numeric\" },\n    { \"payload\": \"\", \"topic\": \"text input\" }];\n\nswitch (msg.topic) {\n    case \"button\":\n        dashboardLog[0] = msg;\n        break;\n    case \"dropdown\":\n        dashboardLog[0] = msg;\n        break;\n    case \"switch\":\n        dashboardLog[2] = msg;\n        break;\n    case \"slider\":\n        dashboardLog[3] = msg;\n        break;\n    case \"numeric\":\n        dashboardLog[4] = msg;\n        break;\n    case \"text input\":\n        dashboardLog[5] = msg;\n}\n\nflow.set('dashboardLog', dashboardLog);\nreturn { \"payload\": dashboardLog };",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 40,
+        "wires": [
+            [
+                "273c6f1f4b0031d7"
+            ]
+        ]
+    },
+    {
+        "id": "68878646323b1f88",
+        "type": "ui_dropdown",
+        "z": "d3e26c01e391d8cd",
+        "name": "Type",
+        "label": "Type",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "1dfbccf2bd793f24",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Nhẹ",
+                "value": "Nhe",
+                "type": "str"
+            },
+            {
+                "label": "Vừa",
+                "value": "Vua",
+                "type": "str"
+            },
+            {
+                "label": "Mạnh",
+                "value": "Manh",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "dropdown",
+        "topicType": "str",
+        "className": "",
+        "x": 70,
+        "y": 340,
+        "wires": [
+            [
+                "69c84bc955fec5af",
+                "9803db70b4e9ac61"
+            ]
+        ]
+    },
+    {
+        "id": "273c6f1f4b0031d7",
+        "type": "ui_template",
+        "z": "d3e26c01e391d8cd",
+        "group": "60138149ce256d0a",
+        "name": "Logs",
+        "order": 6,
+        "width": "8",
+        "height": "10",
+        "format": "<ul>\n    <li ng-repeat = \"x in msg.payload\">\n        <font color = \"red\">\n            {{x.topic}}\n        </font>\n        <ul>\n            <li>\n                {{x.payload}}\n            </li>\n        </ul>\n    </li>\n</ul>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 690,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c05177f83bba8e2e",
+        "type": "function",
+        "z": "d3e26c01e391d8cd",
+        "name": "msg_flow1",
+        "func": "var dashboardLog = flow.get('dashboardLog') || [];\n\n// dashboardLog.push(msg);\n\n// if (dashboardLog.length > 20) {\n//     dashboardLog.shift();\n//     dashboardLog.length = 20;\n// }\n\n// flow.set('dashboardLog', dashboardLog);\n\n// msg = {};\n// msg.payload = dashboardLog;\nmsg = { one: \"Manh\", two: \"vua\", three: \"Yeu\" };\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 380,
+        "wires": [
+            [
+                "49c633ea9e1bc86d"
+            ]
+        ]
+    },
+    {
+        "id": "49c633ea9e1bc86d",
+        "type": "function",
+        "z": "d3e26c01e391d8cd",
+        "name": "flow_msg1",
+        "func": "// var dashboardLog = flow.get('dashboardLog') || [];\nmsg = {one: \"Manh\", two: \"vua\", three:\"Yeu\"};\n// msg.payload = dashboardLog[dashboardLog.length - 1].payload;\n// msg.payload = dashboardLog[dashboardLog.length - 1].payload;\n// msg.payload = dashboardLog[dashboardLog.length - 1].payload;\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 320,
+        "wires": [
+            [
+                "342f64eb3012e08d",
+                "9257d70189bef179"
+            ]
+        ]
+    },
+    {
+        "id": "342f64eb3012e08d",
+        "type": "mqtt out",
+        "z": "d3e26c01e391d8cd",
+        "name": "",
+        "topic": "20127383/quiz06_receive1",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "81cf018b5ce1c76e",
+        "x": 940,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "9257d70189bef179",
+        "type": "debug",
+        "z": "d3e26c01e391d8cd",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "daa2355c7e0fc210",
+        "type": "function",
+        "z": "d3e26c01e391d8cd",
+        "name": "msg_flow2",
+        "func": "var dashboardLog = flow.get('dashboardLog') || [];\n\ndashboardLog.push(msg);\n\nif (dashboardLog.length > 20) {\n    dashboardLog.shift();\n    dashboardLog.length = 20;\n}\n\nflow.set('dashboardLog', dashboardLog);\n\nmsg = {};\nmsg.payload = dashboardLog;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fc407e5b4a43db57",
+        "type": "function",
+        "z": "d3e26c01e391d8cd",
+        "name": "flow_msg2",
+        "func": "var dashboardLog = flow.get('dashboardLog') || [];\n\nmsg = {};\nmsg.payload = dashboardLog[dashboardLog.length - 1].payload;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "041ec9a177b4cd07",
+        "type": "mqtt out",
+        "z": "d3e26c01e391d8cd",
+        "name": "",
+        "topic": "20127383/quiz06_receive2",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "81cf018b5ce1c76e",
+        "x": 940,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "9803db70b4e9ac61",
+        "type": "function",
+        "z": "d3e26c01e391d8cd",
+        "name": "msg_flow3",
+        "func": "var dashboardLog = flow.get('dashboardLog') || [];\n\ndashboardLog.push(msg);\n\nif (dashboardLog.length > 20) {\n    dashboardLog.shift();\n    dashboardLog.length = 20;\n}\n\nflow.set('dashboardLog', dashboardLog);\n\nmsg = {};\nmsg.payload = dashboardLog;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7e5ebc988037ec15",
+        "type": "function",
+        "z": "d3e26c01e391d8cd",
+        "name": "flow_msg3",
+        "func": "var dashboardLog = flow.get('dashboardLog') || [];\n\nmsg = {};\nmsg.payload = dashboardLog[dashboardLog.length - 1].payload;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "da2692c1d4bf65f1",
+        "type": "mqtt out",
+        "z": "d3e26c01e391d8cd",
+        "name": "",
+        "topic": "20127383/quiz06_receive3",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "81cf018b5ce1c76e",
+        "x": 940,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "0ab393599a448dbb",
+        "type": "ui_button",
+        "z": "d3e26c01e391d8cd",
+        "name": "",
+        "group": "1dfbccf2bd793f24",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "BUTTON",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "star",
+        "payload": "Clicked",
+        "payloadType": "str",
+        "topic": "button",
+        "topicType": "str",
+        "x": 80,
+        "y": 140,
+        "wires": [
+            [
+                "7c7e60ae4e3de01a"
+            ]
+        ]
+    },
+    {
+        "id": "7c7e60ae4e3de01a",
+        "type": "ui_switch",
+        "z": "d3e26c01e391d8cd",
+        "name": "",
+        "label": "switch",
+        "tooltip": "",
+        "group": "1dfbccf2bd793f24",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 330,
+        "y": 240,
+        "wires": [
+            [
+                "69c84bc955fec5af"
+            ]
+        ]
+    },
+    {
+        "id": "f3a0b686d143a2b6",
+        "type": "inject",
+        "z": "35fcb186dc742b5c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 200,
+        "wires": [
+            [
+                "bfc20f57e4e19ae6"
+            ]
+        ]
+    },
+    {
+        "id": "bfc20f57e4e19ae6",
+        "type": "http request",
+        "z": "35fcb186dc742b5c",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.thingspeak.com/channels/1988664/feeds.json?results=33",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 310,
+        "y": 280,
+        "wires": [
+            [
+                "656783f7d8843ffb"
+            ]
+        ]
+    },
+    {
+        "id": "656783f7d8843ffb",
+        "type": "json",
+        "z": "35fcb186dc742b5c",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 490,
+        "y": 360,
+        "wires": [
+            [
+                "e7606cd5925a0fa4",
+                "19a44209e60f7cce"
+            ]
+        ]
+    },
+    {
+        "id": "e7606cd5925a0fa4",
+        "type": "debug",
+        "z": "35fcb186dc742b5c",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "19a44209e60f7cce",
+        "type": "ui_chart",
+        "z": "35fcb186dc742b5c",
+        "name": "",
+        "group": "a06d1d6b.bdef2",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 490,
+        "y": 540,
+        "wires": [
+            []
         ]
     }
 ]
