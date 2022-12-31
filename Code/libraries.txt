@@ -1,0 +1,8 @@
+# Wokwi Library List
+# See https://docs.wokwi.com/guides/libraries
+LiquidCrystal
+DHT sensor library for ESPx
+ESP32Servo
+ThingSpeak
+WiFi
+PubSubClient

@@ -1,0 +1,1586 @@
+[
+    {
+        "id": "4f77f48d4111173f",
+        "type": "tab",
+        "label": "Weather",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0c4e6bf1c374c3ed",
+        "type": "tab",
+        "label": "Node-red to esp",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "11fe5226.c1852e",
+        "type": "tab",
+        "label": "Cloud to Node-red",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "5a9e17edfc27d234",
+        "type": "ui_tab",
+        "name": "Dashboard",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "684613be8ea8e62d",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "81cf018b5ce1c76e",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.mqtt-dashboard.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "2257ffde.e0372",
+        "type": "ui_group",
+        "name": "Temp_Humi",
+        "tab": "5e46b61a0455f222",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5e46b61a0455f222",
+        "type": "ui_tab",
+        "name": "Chart",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1dfbccf2bd793f24",
+        "type": "ui_group",
+        "name": "View LCD State",
+        "tab": "5a9e17edfc27d234",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2e94d9024324abb4",
+        "type": "ui_group",
+        "name": "Light_pH",
+        "tab": "5e46b61a0455f222",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5e35d3a51a50228d",
+        "type": "ui_group",
+        "name": "Dashboard",
+        "tab": "5a9e17edfc27d234",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ec6e010b79f3b766",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "6919bf4e5ea3c7bc",
+        "type": "ui_group",
+        "name": "OpenWeather",
+        "tab": "a1a6ea67e912410d",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "80ca014ca57342c6",
+        "type": "ui_group",
+        "name": "MySensor",
+        "tab": "a1a6ea67e912410d",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a1a6ea67e912410d",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "20bdf9ff8aebf3b4",
+        "type": "ui_gauge",
+        "z": "4f77f48d4111173f",
+        "name": "",
+        "group": "6919bf4e5ea3c7bc",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "%",
+        "format": "{{msg.payload.main.humidity}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 720,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "e73543f6cc6ce2cf",
+        "type": "http request",
+        "z": "4f77f48d4111173f",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.openweathermap.org/data/2.5/weather?id=1566083&appid=64213cfcaed14e3fe0ea6fa1bcbdefbd&units=metric",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 290,
+        "y": 380,
+        "wires": [
+            [
+                "169ee1046f3658f9"
+            ]
+        ]
+    },
+    {
+        "id": "90a6e6dc994e1b01",
+        "type": "ui_gauge",
+        "z": "4f77f48d4111173f",
+        "name": "",
+        "group": "6919bf4e5ea3c7bc",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "oC",
+        "format": "{{msg.payload.main.temp}}",
+        "min": "-40",
+        "max": "80",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 730,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "169ee1046f3658f9",
+        "type": "json",
+        "z": "4f77f48d4111173f",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 490,
+        "y": 380,
+        "wires": [
+            [
+                "90a6e6dc994e1b01",
+                "20bdf9ff8aebf3b4"
+            ]
+        ]
+    },
+    {
+        "id": "7cd91c0adeb53202",
+        "type": "inject",
+        "z": "4f77f48d4111173f",
+        "name": "OpenWeather",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "15",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 380,
+        "wires": [
+            [
+                "e73543f6cc6ce2cf"
+            ]
+        ]
+    },
+    {
+        "id": "dfe35eed033c4a29",
+        "type": "ui_text",
+        "z": "4f77f48d4111173f",
+        "group": "6919bf4e5ea3c7bc",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "name": "",
+        "label": "",
+        "format": "<font size=6>Ho Chi Minh City",
+        "layout": "col-center",
+        "className": "",
+        "x": 490,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "a19465ce896eabc6",
+        "type": "http request",
+        "z": "4f77f48d4111173f",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.thingspeak.com/channels/1990625/feeds.json?results=1",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 290,
+        "y": 560,
+        "wires": [
+            [
+                "6cad970c90b56311"
+            ]
+        ]
+    },
+    {
+        "id": "6cad970c90b56311",
+        "type": "json",
+        "z": "4f77f48d4111173f",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 490,
+        "y": 560,
+        "wires": [
+            [
+                "c49a6e80f7ad715a",
+                "83337d569be75514"
+            ]
+        ]
+    },
+    {
+        "id": "8caaf8c00fad0061",
+        "type": "inject",
+        "z": "4f77f48d4111173f",
+        "name": "MySensor",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "15",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 560,
+        "wires": [
+            [
+                "a19465ce896eabc6"
+            ]
+        ]
+    },
+    {
+        "id": "c49a6e80f7ad715a",
+        "type": "ui_gauge",
+        "z": "4f77f48d4111173f",
+        "name": "",
+        "group": "80ca014ca57342c6",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "oC",
+        "format": "{{msg.payload.feeds[0].field1}}",
+        "min": "-40",
+        "max": "80",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 730,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "83337d569be75514",
+        "type": "ui_gauge",
+        "z": "4f77f48d4111173f",
+        "name": "",
+        "group": "80ca014ca57342c6",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "%",
+        "format": "{{msg.payload.feeds[0].field2}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 720,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "6bb73bf159732c2e",
+        "type": "ui_text",
+        "z": "4f77f48d4111173f",
+        "group": "80ca014ca57342c6",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "format": "<font size=6>Garden",
+        "layout": "col-center",
+        "className": "",
+        "x": 490,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "9eb3f08a30fc5202",
+        "type": "debug",
+        "z": "0c4e6bf1c374c3ed",
+        "name": "Dashboard Debug",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "25022cc53b2f122a",
+        "type": "ui_dropdown",
+        "z": "0c4e6bf1c374c3ed",
+        "name": "Type",
+        "label": "Type",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "5e35d3a51a50228d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Nhỏ giọt",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "Phun Sương",
+                "value": 1,
+                "type": "num"
+            },
+            {
+                "label": "Xịt nước",
+                "value": 2,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "type",
+        "topicType": "str",
+        "className": "",
+        "x": 410,
+        "y": 140,
+        "wires": [
+            [
+                "78de7336af12d9b5"
+            ]
+        ]
+    },
+    {
+        "id": "62a00758c27c74c9",
+        "type": "ui_dropdown",
+        "z": "0c4e6bf1c374c3ed",
+        "name": "Level",
+        "label": "Level",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "5e35d3a51a50228d",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Nhẹ",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "Vừa",
+                "value": 1,
+                "type": "num"
+            },
+            {
+                "label": "Mạnh",
+                "value": 2,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "level",
+        "topicType": "str",
+        "className": "",
+        "x": 410,
+        "y": 280,
+        "wires": [
+            [
+                "78de7336af12d9b5"
+            ]
+        ]
+    },
+    {
+        "id": "1ee2656ddfe70623",
+        "type": "ui_dropdown",
+        "z": "0c4e6bf1c374c3ed",
+        "name": "Water",
+        "label": "Water",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "5e35d3a51a50228d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "0.5L",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "1L",
+                "value": 1,
+                "type": "num"
+            },
+            {
+                "label": "2L",
+                "value": 2,
+                "type": "num"
+            },
+            {
+                "label": "3L",
+                "value": 3,
+                "type": "num"
+            },
+            {
+                "label": "4L",
+                "value": 4,
+                "type": "num"
+            },
+            {
+                "label": "5L",
+                "value": 5,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "water",
+        "topicType": "str",
+        "className": "",
+        "x": 410,
+        "y": 200,
+        "wires": [
+            [
+                "78de7336af12d9b5"
+            ]
+        ]
+    },
+    {
+        "id": "78de7336af12d9b5",
+        "type": "function",
+        "z": "0c4e6bf1c374c3ed",
+        "name": "Push Mode to Arr",
+        "func": "var dashboardLog = flow.get('dashboardLog') || [];\n\nif (dashboardLog.length == 0)\n    dashboardLog = [{ \"payload\": 0, \"topic\": \"type\" },\n    { \"payload\": 0, \"topic\": \"water\" },\n    { \"payload\": 0, \"topic\": \"level\" },\n    { \"payload\": 0, \"topic\": \"watering\" }];\n\nswitch (msg.topic) {\n    case \"type\":\n        dashboardLog[0] = msg;\n        break;\n    case \"water\":\n        dashboardLog[1] = msg;\n        break;\n    case \"level\":\n        dashboardLog[2] = msg;\n        break;\n    case \"watering\":\n        dashboardLog[3] = msg;\n}\n\nflow.set('dashboardLog', dashboardLog);\nvar text = \"\"\nfor (let i = 0; i < 4; i++)\n    text += dashboardLog[i][\"payload\"];\n\nreturn { \"topic\": \"setup-watering\", \"payload\": text };",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 240,
+        "wires": [
+            [
+                "6963b93e4a1673f9",
+                "9eb3f08a30fc5202"
+            ]
+        ]
+    },
+    {
+        "id": "4628362146cd8a9f",
+        "type": "ui_switch",
+        "z": "0c4e6bf1c374c3ed",
+        "name": "Watering",
+        "label": "Watering",
+        "tooltip": "",
+        "group": "5e35d3a51a50228d",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "watering",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 400,
+        "y": 340,
+        "wires": [
+            [
+                "78de7336af12d9b5"
+            ]
+        ]
+    },
+    {
+        "id": "6963b93e4a1673f9",
+        "type": "mqtt out",
+        "z": "0c4e6bf1c374c3ed",
+        "name": "",
+        "topic": "Grp10_IoT/watering",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "81cf018b5ce1c76e",
+        "x": 900,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "9f6727895cfea2a2",
+        "type": "mqtt in",
+        "z": "0c4e6bf1c374c3ed",
+        "name": "",
+        "topic": "Grp10_IoT/receive_watering_but",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "81cf018b5ce1c76e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 60,
+        "wires": [
+            [
+                "4628362146cd8a9f"
+            ]
+        ]
+    },
+    {
+        "id": "1f235c13.329e84",
+        "type": "ui_chart",
+        "z": "11fe5226.c1852e",
+        "name": "Temperature",
+        "group": "2257ffde.e0372",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "label": "Nhiệt độ",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "dd HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "-40",
+        "ymax": "80",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#f35512",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1110,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "57b6fd03.409fb4",
+        "type": "change",
+        "z": "11fe5226.c1852e",
+        "name": "Data Array",
+        "rules": [
+            {
+                "t": "set",
+                "p": "data",
+                "pt": "msg",
+                "to": "$.feeds.{\"x\":created_at, \"y\" : field1}",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 480,
+        "wires": [
+            [
+                "5d6b75fd.a012bc"
+            ]
+        ]
+    },
+    {
+        "id": "450ae59b28bcb3c1",
+        "type": "function",
+        "z": "11fe5226.c1852e",
+        "name": "Return Payload",
+        "func": "return msg.payload;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 520,
+        "wires": [
+            [
+                "df8d17700ee55478",
+                "57b6fd03.409fb4"
+            ]
+        ]
+    },
+    {
+        "id": "df8d17700ee55478",
+        "type": "change",
+        "z": "11fe5226.c1852e",
+        "name": "Data Array",
+        "rules": [
+            {
+                "t": "set",
+                "p": "data",
+                "pt": "msg",
+                "to": "$.feeds.{\"x\":created_at, \"y\" : field2}",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 560,
+        "wires": [
+            [
+                "31cc8c11c5ba595c"
+            ]
+        ]
+    },
+    {
+        "id": "fb7bf33281d1a035",
+        "type": "ui_chart",
+        "z": "11fe5226.c1852e",
+        "name": "Humidity",
+        "group": "2257ffde.e0372",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Độ ẩm",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "dd HH:mm",
+        "interpolate": "cubic",
+        "nodata": "",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#125c91",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1100,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5d6b75fd.a012bc",
+        "type": "function",
+        "z": "11fe5226.c1852e",
+        "name": "Setup Payload",
+        "func": "series = [];\ndata = [];\nlabels = [];\n\nseries.push(\"Celcius\");\nlabels.push(\"Celcius\");\n\nif (msg.data.length <= 24) {\n    data.push(msg.data);\n}\nelse {\n    data.push(msg.data.slice(0, 24));\n}\n\nmsg.payload = [{ \"series\": series, \"data\": data, \"labels\": labels }];\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 10,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 480,
+        "wires": [
+            [
+                "1f235c13.329e84"
+            ]
+        ]
+    },
+    {
+        "id": "31cc8c11c5ba595c",
+        "type": "function",
+        "z": "11fe5226.c1852e",
+        "name": "Setup Payload",
+        "func": "series = [];\ndata = [];\nlabels = [];\n\nseries.push(\"%\");\nlabels.push(\"%\");\n\nif (msg.data.length <= 24) {\n    data.push(msg.data);\n}\nelse {\n    data.push(msg.data.slice(0, 24));\n}\n\nmsg.payload = [{ \"series\": series, \"data\": data, \"labels\": labels }];\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 10,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 560,
+        "wires": [
+            [
+                "fb7bf33281d1a035"
+            ]
+        ]
+    },
+    {
+        "id": "b58a7f119bfa97af",
+        "type": "ui_gauge",
+        "z": "11fe5226.c1852e",
+        "name": "pH",
+        "group": "2e94d9024324abb4",
+        "order": 4,
+        "width": "0",
+        "height": "0",
+        "gtype": "gage",
+        "title": "Độ pH",
+        "label": "pH",
+        "format": "{{msg.payload.feeds[0].field4}}",
+        "min": 0,
+        "max": "14",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 810,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "7e9cce0c23b062c4",
+        "type": "ui_text",
+        "z": "11fe5226.c1852e",
+        "group": "2e94d9024324abb4",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "Light",
+        "label": "Độ sáng",
+        "format": "{{msg.payload.feeds[0].field3}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 810,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "23468d563871cb6e",
+        "type": "debug",
+        "z": "11fe5226.c1852e",
+        "name": "Light_pH Debug",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "ecdd90bdea636a57",
+        "type": "ui_dropdown",
+        "z": "11fe5226.c1852e",
+        "name": "",
+        "label": "Time Range",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "2257ffde.e0372",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "multiple": false,
+        "options": [
+            {
+                "label": "1 day",
+                "value": 24,
+                "type": "num"
+            },
+            {
+                "label": "2 days",
+                "value": 48,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 170,
+        "y": 40,
+        "wires": [
+            [
+                "4b5fe29563ce7d07"
+            ]
+        ]
+    },
+    {
+        "id": "95801cc088f20d44",
+        "type": "http request",
+        "z": "11fe5226.c1852e",
+        "name": "Run HTTP Request",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.thingspeak.com/channels/1990625/feeds.json?results={{payload}}",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "basic",
+        "senderr": false,
+        "headers": [],
+        "x": 410,
+        "y": 380,
+        "wires": [
+            [
+                "3491eb1583250206"
+            ]
+        ]
+    },
+    {
+        "id": "3491eb1583250206",
+        "type": "json",
+        "z": "11fe5226.c1852e",
+        "name": "Convert to JSON",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 630,
+        "y": 380,
+        "wires": [
+            [
+                "450ae59b28bcb3c1",
+                "86eda7d2e9c63974"
+            ]
+        ]
+    },
+    {
+        "id": "91e0e0bb236d9c88",
+        "type": "inject",
+        "z": "11fe5226.c1852e",
+        "name": "Req Sensor Channel",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 240,
+        "wires": [
+            [
+                "80d5f7e16dbec9f4"
+            ]
+        ]
+    },
+    {
+        "id": "4b5fe29563ce7d07",
+        "type": "function",
+        "z": "11fe5226.c1852e",
+        "name": "Global Var \"timeRange\"",
+        "func": "global.set(\"timeRange\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "80d5f7e16dbec9f4",
+        "type": "function",
+        "z": "11fe5226.c1852e",
+        "name": "Check Time Range",
+        "func": "if (global.get(\"timeRange\") == 48)\n    msg.payload = 48;\nelse\n    msg.payload = 24;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 300,
+        "wires": [
+            [
+                "95801cc088f20d44"
+            ]
+        ]
+    },
+    {
+        "id": "cef99ab060b3409f",
+        "type": "http request",
+        "z": "11fe5226.c1852e",
+        "name": "Run HTTP Request",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.thingspeak.com/channels/1990625/feeds.json?results=1",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "basic",
+        "senderr": false,
+        "headers": [],
+        "x": 410,
+        "y": 180,
+        "wires": [
+            [
+                "195530a36a6e50ef"
+            ]
+        ]
+    },
+    {
+        "id": "5f407bf0635eb393",
+        "type": "inject",
+        "z": "11fe5226.c1852e",
+        "name": "Req Sensor Channel",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 140,
+        "wires": [
+            [
+                "cef99ab060b3409f"
+            ]
+        ]
+    },
+    {
+        "id": "195530a36a6e50ef",
+        "type": "json",
+        "z": "11fe5226.c1852e",
+        "name": "Convert to JSON",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 630,
+        "y": 180,
+        "wires": [
+            [
+                "b58a7f119bfa97af",
+                "7e9cce0c23b062c4",
+                "23468d563871cb6e"
+            ]
+        ]
+    },
+    {
+        "id": "86eda7d2e9c63974",
+        "type": "debug",
+        "z": "11fe5226.c1852e",
+        "name": "Temp_Humi Debug",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "a757f287f276191a",
+        "type": "inject",
+        "z": "11fe5226.c1852e",
+        "name": "Req Watering Channel",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 780,
+        "wires": [
+            [
+                "5c75c799b8eb30b2"
+            ]
+        ]
+    },
+    {
+        "id": "5c75c799b8eb30b2",
+        "type": "http request",
+        "z": "11fe5226.c1852e",
+        "name": "Run HTTP Request",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.thingspeak.com/channels/1994623/feeds.json?results=1",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "basic",
+        "senderr": false,
+        "headers": [],
+        "x": 230,
+        "y": 840,
+        "wires": [
+            [
+                "e6a1fec44a122d5e"
+            ]
+        ]
+    },
+    {
+        "id": "e6a1fec44a122d5e",
+        "type": "json",
+        "z": "11fe5226.c1852e",
+        "name": "Convert to JSON",
+        "property": "payload",
+        "action": "",
+        "pretty": true,
+        "x": 270,
+        "y": 900,
+        "wires": [
+            [
+                "444f176df4bc59e0",
+                "d98a376684e2c6bb",
+                "ce162d0954909677",
+                "bbbafc41601e0ac3",
+                "1f38e9d55c64d136",
+                "a21e413d91256553",
+                "dfe93c53d2cde895"
+            ]
+        ]
+    },
+    {
+        "id": "444f176df4bc59e0",
+        "type": "debug",
+        "z": "11fe5226.c1852e",
+        "name": "Watering Channel Debug",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "d98a376684e2c6bb",
+        "type": "function",
+        "z": "11fe5226.c1852e",
+        "name": "Extract Type",
+        "func": "if (msg.payload.feeds[0].field1 == 0)\n    return { \"payload\":  \"Nhỏ giọt\"};\nelse if (msg.payload.feeds[0].field1 == 1)\n    return { \"payload\": \"Phun sương\" };\n\nreturn { \"payload\": \"Xịt nước\" };",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 780,
+        "wires": [
+            [
+                "9aa0cadff9b4db0f"
+            ]
+        ]
+    },
+    {
+        "id": "ce162d0954909677",
+        "type": "function",
+        "z": "11fe5226.c1852e",
+        "name": "Extract Water",
+        "func": "if (msg.payload.feeds[0].field2 == 0)\n    return { \"payload\": \"0.5L\" };\nelse if (msg.payload.feeds[0].field2 == 1)\n    return { \"payload\": \"1L\" };\nelse if (msg.payload.feeds[0].field2 == 2)\n    return { \"payload\": \"2L\" };\nelse if (msg.payload.feeds[0].field2 == 3)\n    return { \"payload\": \"3L\" };\nelse if (msg.payload.feeds[0].field2 == 4)\n    return { \"payload\": \"4L\" };\n\nreturn { \"payload\": \"5L\" };",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 840,
+        "wires": [
+            [
+                "87657cc9b12c993b"
+            ]
+        ]
+    },
+    {
+        "id": "bbbafc41601e0ac3",
+        "type": "function",
+        "z": "11fe5226.c1852e",
+        "name": "Extract Level",
+        "func": "if (msg.payload.feeds[0].field3 == 0)\n    return { \"payload\": \"Nhẹ\" };\nelse if (msg.payload.feeds[0].field3 == 1)\n    return { \"payload\": \"Vừa\" };\n\nreturn { \"payload\": \"Mạnh\" };",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 900,
+        "wires": [
+            [
+                "3bb29fa86e5f925f"
+            ]
+        ]
+    },
+    {
+        "id": "a21e413d91256553",
+        "type": "function",
+        "z": "11fe5226.c1852e",
+        "name": "Extract Watering Percent",
+        "func": "return { \"payload\": msg.payload.feeds[0].field5.toString() + \"%\" };",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 1020,
+        "wires": [
+            [
+                "0ce2612e3e040eeb"
+            ]
+        ]
+    },
+    {
+        "id": "1f38e9d55c64d136",
+        "type": "function",
+        "z": "11fe5226.c1852e",
+        "name": "Extract Ranning",
+        "func": "if (msg.payload.feeds[0].field4 == 0)\n    return { \"payload\": \"Nice day\" };\n\nreturn { \"payload\": \"It's ranning\" };",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 960,
+        "wires": [
+            [
+                "96982f0b6fb50b53"
+            ]
+        ]
+    },
+    {
+        "id": "dfe93c53d2cde895",
+        "type": "function",
+        "z": "11fe5226.c1852e",
+        "name": "Extract Watering Complete",
+        "func": "if (msg.payload.feeds[0].field6 == 0)\n    return { \"payload\": \"Non-watering\" };\nelse if (msg.payload.feeds[0].field6 == 1)\n    return { \"payload\": \"Watering\" };\n\nreturn { \"payload\": \"Watered\" };",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 1080,
+        "wires": [
+            [
+                "971fe9fae404942d"
+            ]
+        ]
+    },
+    {
+        "id": "0ce2612e3e040eeb",
+        "type": "ui_text",
+        "z": "11fe5226.c1852e",
+        "group": "1dfbccf2bd793f24",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "Watering Percent",
+        "label": "Watering Percent",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 830,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "971fe9fae404942d",
+        "type": "ui_text",
+        "z": "11fe5226.c1852e",
+        "group": "1dfbccf2bd793f24",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "Watering Complete",
+        "label": "Watering Complete",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 830,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "96982f0b6fb50b53",
+        "type": "ui_text",
+        "z": "11fe5226.c1852e",
+        "group": "1dfbccf2bd793f24",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Ranning",
+        "label": "Ranning",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 800,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "3bb29fa86e5f925f",
+        "type": "ui_text",
+        "z": "11fe5226.c1852e",
+        "group": "1dfbccf2bd793f24",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "Level",
+        "label": "Level",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 790,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "87657cc9b12c993b",
+        "type": "ui_text",
+        "z": "11fe5226.c1852e",
+        "group": "1dfbccf2bd793f24",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Water",
+        "label": "Water",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 790,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "9aa0cadff9b4db0f",
+        "type": "ui_text",
+        "z": "11fe5226.c1852e",
+        "group": "1dfbccf2bd793f24",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Type",
+        "label": "Type",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 790,
+        "y": 780,
+        "wires": []
+    }
+]

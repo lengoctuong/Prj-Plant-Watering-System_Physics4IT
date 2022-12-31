@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "author": "Ngọc Tường Lê",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard", "id": "bb1", "top": 45, "left": -16.4, "attrs": {} },
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": -196.9, "left": -14.6, "attrs": {} },
+    { "type": "wokwi-lcd2004", "id": "lcd1", "top": -265.33, "left": 241.68, "attrs": {} },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 17.28,
+      "left": 183.03,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": -118.88,
+      "left": -175.44,
+      "attrs": { "temperature": "31.9", "humidity": "70" }
+    },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr1",
+      "top": 70.51,
+      "left": -242.34,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 121.4,
+      "left": 105.6,
+      "attrs": { "color": "yellow", "label": "Next" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn2",
+      "top": 121.4,
+      "left": 211.2,
+      "attrs": { "color": "grey", "label": "Option" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn3",
+      "top": 121.4,
+      "left": 422.4,
+      "attrs": { "color": "white", "label": "Watering" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn4",
+      "top": 121.4,
+      "left": 316.8,
+      "attrs": { "color": "blue", "label": "Up" }
+    },
+    { "type": "wokwi-servo", "id": "servo1", "top": -384.28, "left": -53.83, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "lcd1:VDD", "bb1:tp.3", "red", [ "v31.75", "h-119.79" ] ],
+    [ "lcd1:VSS", "bb1:tn.2", "black", [ "v24.52", "h-114.81" ] ],
+    [ "bb1:tp.1", "esp:3V3", "red", [ "v0" ] ],
+    [ "bb1:tn.1", "esp:GND.1", "black", [ "v-0.28", "h-12.59", "v-116.64", "h1.81" ] ],
+    [ "lcd1:RS", "esp:D12", "green", [ "v-58.2", "h-190.72" ] ],
+    [ "lcd1:RW", "bb1:tn.15", "black", [ "v0" ] ],
+    [ "lcd1:E", "esp:D13", "green", [ "v-48.39", "h-210.22" ] ],
+    [ "esp:D5", "lcd1:D4", "green", [ "h0" ] ],
+    [ "esp:D4", "lcd1:D5", "green", [ "h0" ] ],
+    [ "esp:D2", "lcd1:D6", "green", [ "h0" ] ],
+    [ "esp:D15", "lcd1:D7", "green", [ "h0" ] ],
+    [ "lcd1:K", "bb1:tn.25", "black", [ "v0" ] ],
+    [ "lcd1:A", "r1:2", "red", [ "v0" ] ],
+    [ "bb1:tp.15", "r1:1", "red", [ "v0" ] ],
+    [ "esp:D34", "lcd1:V0", "green", [ "h0" ] ],
+    [ "bb1:tp.4", "dht1:VCC", "red", [ "v-33.39", "h-218.27", "v-27.89" ] ],
+    [ "dht1:GND", "bb1:tn.3", "black", [ "v7.75", "h138.35" ] ],
+    [ "esp:D18", "dht1:SDA", "green", [ "h-140.04", "v130.24", "h-57.26" ] ],
+    [ "ldr1:GND", "bb1:tn.4", "black", [ "h0" ] ],
+    [ "ldr1:VCC", "bb1:tp.5", "red", [ "h0" ] ],
+    [ "esp:D35", "ldr1:AO", "green", [ "h-28.05", "v239.93" ] ],
+    [ "esp:D19", "btn1:1.l", "yellow", [ "h0" ] ],
+    [ "bb1:tn.14", "btn1:2.r", "black", [ "h3.07", "v86.1" ] ],
+    [ "btn2:2.r", "bb1:tn.23", "black", [ "h6.36", "v-86.1" ] ],
+    [ "btn4:2.r", "bb1:tn.32", "black", [ "h5.03", "v-86.1" ] ],
+    [ "btn3:2.r", "bb1:tn.41", "black", [ "h7.52", "v-86.1" ] ],
+    [ "btn2:1.l", "esp:D21", "gray", [ "h-0.16", "v-268.4" ] ],
+    [ "btn4:1.l", "esp:D22", "blue", [ "h0.26", "v-297.3" ] ],
+    [ "esp:D23", "btn3:1.l", "white", [ "h0" ] ],
+    [ "bb1:tn.6", "servo1:GND", "black", [ "v-53.06", "h-175.08", "v-322.99" ] ],
+    [ "esp:D25", "servo1:PWM", "green", [ "h-65.68", "v-223.64" ] ],
+    [ "bb1:tp.6", "servo1:V+", "red", [ "v-33.61", "h-190.84", "v-348.2", "h49.81" ] ],
+    [ "btn2:1.l", "bb1:22t.e", "", [ "$bb" ] ],
+    [ "btn2:1.r", "bb1:29t.e", "", [ "$bb" ] ],
+    [ "btn3:1.l", "bb1:44t.e", "", [ "$bb" ] ],
+    [ "btn3:1.r", "bb1:51t.e", "", [ "$bb" ] ],
+    [ "btn4:1.l", "bb1:33t.e", "", [ "$bb" ] ],
+    [ "btn4:1.r", "bb1:40t.e", "", [ "$bb" ] ],
+    [ "btn1:1.l", "bb1:11t.e", "", [ "$bb" ] ],
+    [ "btn1:1.r", "bb1:18t.e", "", [ "$bb" ] ]
+  ],
+  "dependencies": {}
+}
